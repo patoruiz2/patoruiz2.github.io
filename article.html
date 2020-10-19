@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Articulos</title>
+        <!--Enlazar css con el html-->
+        <link rel="stylesheet" href="Assets/css/style.css" type="text/css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="center">
+            <!--LOGO-->
+                <div id="logo">
+                    <img src="Assets/react-2.svg" class="app-logo" alt="Logotipo" height="250px" width="50"/>
+                    <span id="brand">
+                        <strong>BLOG</strong>NSLP
+                    </span>
+                </div>
+                 <!--Menu de navegacion-->
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="form.html">Formulario</a>
+                        </li>
+                        <li>
+                            <a href="#">Pagina 1</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Limpiar los FLOATS-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        
+            <div class="center">
+                <selection id="content">
+                        <article class="article-item article-detail">
+                            <div class="image-wrap">
+                                <img src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg"
+                                alt="Paisaje"/>
+                            </div>
+                            <h1 class="subheader">Articulo de prueba</h1>
+                            <span class="date">
+                                Hace 5 minutos
+                            </span>
+                            <p>
+                                ¿Qué es Lorem Ipsum?
+                                <p>
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
+                                los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
+                                sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. 
+                                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
+                                y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, 
+                                el cual incluye versiones de Lorem Ipsum.
+                                </p>
+                                <p>
+                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
+                                los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
+                                sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. 
+                                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
+                                y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, 
+                                el cual incluye versiones de Lorem Ipsum.
+                                </p>
+                            </p>
+                            <div class="clearfix"></div>
+                        </article>
+
+                </selection>
+                <!--sidebar-->
+                <aside id="sidebar">
+                    <div id="nav-blog" class="sidebar-item">
+                        <h3>Podes hacer esto</h3>
+                        <a href="#" class="btn btn-success">Crear articulo</a>
+                    </div>
+                        <div id="search" class="sidebar-item">
+                            <h3>Buscador</h3>
+                            <p>Encontra el articulo</p>
+                                <form>
+                                    <input type="text" name="search" autocomplete="off" spellcheck="false"/>
+                                    <input type="submit" name="submit" value="buscar" class="btn"/>
+                                </form>
+                        </div>
+                </aside>
+                <div class="clearfix"></div>
+            </div>
+            <footer id="footer">
+                <div class="center">
+                    <p>&copy;BLOG: : NSLP</p>
+                </div>
+            </footer>   
+    </body>
+</html>

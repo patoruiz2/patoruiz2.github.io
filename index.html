@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--Adapta la pagina a pantallas perfectamente de X telefono-->
+        <title>Maquetacion web</title>
+        <!--Enlazar css con el html-->
+        <link rel="stylesheet" href="Assets/css/style.css" type="text/css">
+        <script type="text/javascript">
+            window.addEventListener("load",function(){ /*Esto es para decirle que se ejecute la funcion, cuando la pagina este correctamente cargada*/
+                var template = document.getElementById("article-template");
+                for(var i =1;i<=5;i++){
+                    var clonado = template.cloneNode(true);
+                    clonado.removeAttribute("id");/*remueve el atributo "id" para que no se repita y evitar confusion al programa*/
+                    var h2 = clonado.getElementsByTagName("h2")[0]; /*Clona el texto que contenga "h2" y lo hace diferente agregandole el array "[0]"*/
+                    h2.innerHTML=h2.textContent + " " + i; /*mete el texto del "h2" y le concatena el "i"*/
+                    articles.appendChild(clonado);/*añadir articulos dentro del div con id "articles"*/
+                }
+            });
+            
+        </script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="center">
+            <!--LOGO-->
+                <div id="logo">
+                    <img src="Assets/react-2.svg" class="app-logo" alt="Logotipo" height="250px" width="50"/>
+                    <span id="brand">
+                        <strong>BLOG</strong>NSLP
+                    </span>
+                </div>
+                 <!--Menu de navegacion-->
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="form.html">Formulario</a>
+                        </li>
+                        <li>
+                            <a href="#">Pagina 1</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Limpiar los FLOATS-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+            <div id="slider" class="slider-big">
+                <h1>
+                    Bienvenidos al aprendizaje de Maquetacion
+                </h1>
+                <a href="#" class="btn-white">Ir al Blog</a>
+            </div> 
+            <div class="center">
+                <selection id="content">
+                    <!--listado de articulos-->
+                    <h2 class="subheader">Ultimos articulos</h2>
+                    <!--añadir articulos via java script-->
+                    <div id="articles">
+                        <article class="article-item" id="article-template">
+                            <div class="image-wrap">
+                                <img src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg"
+                                alt="Paisaje"/>
+                            </div>
+                            <h2>Articulo de prueba</h2>
+                            <span class="date">
+                                Hace 5 minutos
+                            </span>
+                            <a href="article.html">Leer mas</a>
+                            <div class="clearfix"></div>
+                        </article>
+                    </div>
+                </selection>
+                <!--sidebar-->
+                <aside id="sidebar">
+                    <div id="nav-blog" class="sidebar-item">
+                        <h3>Podes hacer esto</h3>
+                        <a href="#" class="btn btn-success">Crear articulo</a>
+                    </div>
+                        <div id="search" class="sidebar-item">
+                            <h3>Buscador</h3>
+                            <p>Encontra el articulo</p>
+                                <form>
+                                    <input type="text" name="search" autocomplete="off" spellcheck="false"/>
+                                    <input type="submit" name="submit" value="buscar" class="btn"/>
+                                </form>
+                        </div>
+                </aside>
+                <div class="clearfix"></div>
+            </div>
+            <footer id="footer">
+                <div class="center">
+                    <p>&copy;BLOG: : NSLP</p>
+                </div>
+            </footer>   
+    </body>
+</html>
